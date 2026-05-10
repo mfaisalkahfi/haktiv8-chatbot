@@ -2,11 +2,11 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Consolas', 'Courier New', monospace, sans-serif;
 }
 
 body {
-    background-color: #f4f7f6;
+    background-color: #0d1117; /* GitHub Dark Background */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,22 +17,24 @@ body {
     width: 100%;
     max-width: 420px;
     height: 85vh;
-    background: #ffffff;
+    background: #161b22;
     border-radius: 16px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    border: 1px solid #30363d;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
     display: flex;
     flex-direction: column;
     overflow: hidden;
 }
 
 .chat-header {
-    background-color: #007bff;
-    color: #ffffff;
+    background-color: #010409;
+    color: #58a6ff;
     padding: 18px;
-    text-align: center;
-    font-size: 18px;
+    text-align: left;
+    font-size: 16px;
     font-weight: 600;
     letter-spacing: 0.5px;
+    border-bottom: 1px solid #30363d;
 }
 
 #chat-box {
@@ -42,7 +44,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 14px;
-    background-color: #f9f9f9;
+    background-color: #0d1117;
 }
 
 .message {
@@ -57,47 +59,48 @@ body {
 
 .message-user {
     align-self: flex-end;
-    background-color: #007bff;
+    background-color: #238636; /* GitHub Success Green */
     color: #ffffff;
     border-bottom-right-radius: 4px;
-    box-shadow: 0 2px 5px rgba(0, 123, 255, 0.2);
+    box-shadow: 0 2px 5px rgba(35, 134, 54, 0.2);
 }
 
 .message-model {
     align-self: flex-start;
-    background-color: #ffffff;
-    color: #333333;
+    background-color: #21262d;
+    color: #c9d1d9;
     border-bottom-left-radius: 4px;
-    border: 1px solid #e0e0e0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
+    border: 1px solid #30363d;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 #chat-form {
     display: flex;
     padding: 14px;
-    background-color: #ffffff;
-    border-top: 1px solid #eeeeee;
+    background-color: #161b22;
+    border-top: 1px solid #30363d;
     gap: 10px;
 }
 
 #user-input {
     flex: 1;
     padding: 12px 18px;
-    border: 1px solid #ced4da;
+    border: 1px solid #30363d;
+    color: #c9d1d9;
     border-radius: 24px;
     font-size: 14px;
     outline: none;
     transition: border-color 0.2s;
-    background-color: #f8f9fa;
+    background-color: #0d1117;
 }
 
 #user-input:focus {
-    border-color: #007bff;
-    background-color: #ffffff;
+    border-color: #58a6ff;
+    background-color: #010409;
 }
 
 button[type="submit"] {
-    background-color: #007bff;
+    background-color: #238636;
     color: white;
     border: none;
     border-radius: 50%;
@@ -111,7 +114,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #2ea043;
     transform: scale(1.05);
 }
 
